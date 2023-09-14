@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Early Birds Meeting of Narcotics Anonymous Script</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const listItems = document.querySelectorAll('.toggle-check');
+
+            listItems.forEach((item, index) => {
+                const savedTick = localStorage.getItem(`tick-${index}`);
+                const icon = item.querySelector('.fa-check');
+                if (savedTick === 'true') {
+                    icon.style.display = 'inline';
+                } else {
+                    icon.style.display = 'none';
+                }
+            });
+
+            listItems.forEach((item, index) => {
+                item.addEventListener('click', function () {
+                    const icon = this.querySelector('.fa-check');
+                    if (icon.style.display === 'none' || icon.style.display === '') {
+                        icon.style.display = 'inline';
+                        localStorage.setItem(`tick-${index}`, 'true');
+                    } else {
+                        icon.style.display = 'none';
+                        localStorage.setItem(`tick-${index}`, 'false');
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'OpenDyslexic', sans-serif;
+            max-width: 100%;
+            word-wrap: break-word;
+        }
+
+        h1 {
+
+            color: blue;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            font-size: 1rem;
+        }
+
+        i {
+            color: blue;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+
+        @media (min-width: 1440px) {
+
+            h1,
+            h2,
+            p {
+                font-size: 200%;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            h1,
+            h2,
+            p {
+                font-size: 150%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <h1>Early Birds Meeting of Narcotics Anonymous Script</h1>
+        <hr>
+    </header>
+    <h2>Introduction</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>Welcome to the Early Birds meeting of Narcotics Anonymous. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>We meet from Monday to Sunday at 9 a.m. for 90 minutes. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>My name is Dennis, and I am an addict. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>This is a closed meeting of Narcotics Anonymous, open to addicts only. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Opening Moment</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>Please, can we have a moment of silence to remember why we are here and to think of the
+                still-suffering addicts, both inside and outside these rooms? </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Newcomers and Announcements</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>We would like to extend a special welcome to any newcomers or visitors. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Would you please unmute and introduce yourself? </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>This is not to embarrass you, but rather to welcome you to Early Birds. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>I would like to ask our female and male newcomer representatives if there are any
+                announcements. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>We have a business meeting every Saturday after the meeting. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Traditions and Suggestions</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>Now, let's go over some of our traditions: </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>The only requirement for membership is the desire to stop using. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>We are not affiliated with any outside organizations or treatment centers. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Recovery is possible in NA meetings. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Newcomers are suggested to attend 90 meetings in 90 days and to look for similarities,
+                not differences. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Guidelines and Etiquette</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>If you find anything offensive, please message the host or co-host so the situation can
+                be rectified during the meeting, maintaining an atmosphere of recovery. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Members sharing in a disruptive manner will be muted or removed. Disruptive behavior
+                will not be tolerated. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Literature and Resources</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>If you wish to purchase NA literature, we will post the UK website link in the chat,
+                along with newcomer leaflets in PDF format that you can download for free. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Readings</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>We will now share some readings. If you wish to read, please raise your virtual hand,
+                and you will be called on. We need six volunteers. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Who is an addict? </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>What is the Narcotics Anonymous program? </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Why are we here? </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>How it works </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>The 12 Traditions </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>JFT (Just For Today) </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Guest Speaker</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>The consensus of this meeting is that (Speaker) will share his Experience, Strength,
+                and Hope (ESH) with us for the next 25 minutes. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>After 20 minutes, a card will be shown to inform you that you have 5 minutes remaining.
+            </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Sharing Guidelines</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>To allow everyone the opportunity to share, we kindly ask you to limit your sharing
+                time to 3 minutes. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>At the end of two minutes, a card will be shown to ask you to conclude your share
+                within the remaining minute. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Please acknowledge this, or you may be muted to allow the meeting to progress. This is
+                not to undervalue your share but to treat everyone equally. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Additional Guidelines</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>To maintain an atmosphere of recovery, members sharing in a disruptive manner may be
+                muted. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Although this meeting is on the Zoom platform, it must still be respected. We ask that
+                you please dress appropriately. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Sharing Time</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>If inappropriate dress is observed, a committee member will message you directly so
+                that you can address the issue. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>If no action is taken, a committee member will turn off your camera. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Thank you for your understanding. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>If you would like to share, please raise your virtual hand or send a chat message to
+                either the host or one of the co-hosts. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>We will save the last 10 minutes for newcomers and shy sharers, although you may share
+                at any time. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>The meeting is now open for sharing from the floor. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Time Markers</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>10:10: We have now entered the time reserved for newcomers or shy sharers. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>10:20: We have reached the end of the sharing time, but the meeting is not over. </p><i
+                class="fas fa-check" style="display:none;"></i>
+        </li>
+    </ul>
+    <hr>
+    <h2>Closing Remarks</h2>
+    <ul>
+        <li class="toggle-check">
+            <p>I want to thank the speaker, those who shared, and everyone else involved in service.
+            </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Are there any NA-related announcements? </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>I would also like to remind you of the business meeting at the end of the meeting on
+                Saturday. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Please attend if you would like to contribute to the service. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Tradition 7: Money is collected to help pay for the rent of the Zoom space and to
+                support the area, region, world, and the still-suffering addict. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>The donation link has been posted in the chat. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>I would like to ask (Attendee) if he would like to announce keyrings. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Here at Early Birds, we mail out keyrings. Please message Deb your address if you are
+                celebrating today, and Deb will send one out to you. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Due to ongoing postal service issues, please be patient as delivery may take longer
+                than expected. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Rest assured, you will receive your keyring. We appreciate your patience. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Would someone like to read "We Do Recover"? </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>I want to remind you of the spiritual principle of anonymity. What you hear here, who
+                you see here, when you leave here, please let it stay here. </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>I am now going to open the chat. Members available for sponsorship, please post your
+                phone numbers in the chat. </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Can I ask a newcomer with less than 90 days to read "Just For Today"? </p><i class="fas fa-check"
+                style="display:none;"></i>
+        </li>
+        <li class="toggle-check">
+            <p>Finally, I would like to ask (Attendee) to close the meeting with the Serenity Prayer.
+            </p><i class="fas fa-check" style="display:none;"></i>
+        </li>
+
+
+</body>
+
+</html>
